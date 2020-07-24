@@ -73,13 +73,13 @@ app.get("/help/*", (req, res) => {
   });
 });
 
-app.get("*", (req, res) => {
-  res.render("404", {
-    title: "404",
-    name: "Vedant",
-    errorMessage: "Page Not found",
-  });
-});
+// app.get("*", (req, res) => {
+//   res.render("404", {
+//     title: "404",
+//     name: "Vedant",
+//     errorMessage: "Page Not found",
+//   });
+// });
 
 app.listen(port, () => {
   console.log("Server started on " + port);
